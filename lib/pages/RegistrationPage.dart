@@ -21,6 +21,7 @@ class RegistrationPage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      resizeToAvoidBottomInset: false,
       body: Center(
         child: Container(
           child: Column(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reg_form/pages/ListPage.dart';
+import 'package:reg_form/pages/phones/PhonePage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
         title: Text('Hello'),
         centerTitle: true,
       ),
+      resizeToAvoidBottomInset: false,
       body: Center(
         child: Container(
           width: 500,

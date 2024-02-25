@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:reg_form/pages/ListPage.dart';
+import 'package:flutter/services.dart';
+import 'package:reg_form/pages/phones/PhonePage.dart';
 import 'package:reg_form/pages/RegistrationPage.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(MyApp());
 }
 
@@ -11,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: RegistrationPage(),
+      home: ListPage(),
     );
   }
 }
